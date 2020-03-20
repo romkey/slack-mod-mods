@@ -1,0 +1,34 @@
+ID, Name, Created, Creator, Members, Purpose, Topic, Private, Archived
+C8V3VF916,general,1516391877,U8VNL10NQ,,This channel is for workspace-wide communication and announcements. All members are in this channel.,General Hackerspace Talk,false,false
+C8V6ZJUUR,announcements,1516392342,U8VNL10NQ,,Official channel for events and other Hackerspace news.,"",false,false
+C8V72SHAM,volunteer,1516392673,U8VNL10NQ,,General information about volunteer opportunities at the hackerspace,"",false,false
+C8V7G60QZ,infosec,1516394031,U8VNL10NQ,,general non-sensitive information security talk,"",false,false
+C8VL1TTCK,random,1516391877,U8VNL10NQ,,"A place for non-work-related flimflam, faffing, hodge-podge or jibber-jabber you'd prefer to keep out of more focused work-related channels.",Hackerspace banter and water cooler conversation,false,false
+C8VSN185B,woodshop,1516392419,U8VNL10NQ,,Woodshop related talk,"",false,false
+C8VUV1U91,playing-games,1516482459,U8W1YF4NQ,,what cool / good games are you all playing?,"",false,false
+C8W8ACBFC,introductions,1516580539,U8X9ZTX1D,,Who are you? What kinds of things are you in to and what do you do at ^H? What's your favorite bridge?,"",false,false
+C8W9Z580Z,jobs,1516661991,U8VV3DCDT,,We are occassionally contacted by businesses with tech job postings. This list may not be up to date.,"",false,false
+C8WJWUDL6,electronicslab,1516392537,U8VNL10NQ,,Electronics Lab related talk,"",false,false
+C8WK3AVHU,feedback,1516393185,U8VNL10NQ,,general talk on how to form a more perfect hackerspace,"",false,false
+C8WQWM1NK,craftlab,1516392464,U8VNL10NQ,,Craft Lab related talk,"",false,false
+C8X0U0ZPB,lasercutter,1516749450,U8X3D84ES,,Channel for all things laser. Pew pew!,"",false,false
+C8Y8XGC78,metalworking,1516736492,U8WL9AGBV,,"discuss people's projects involving metalworking, ask for metalworking help","",false,false
+C8YFJJW9M,3dprinting,1516738347,U8WM6S7U6,,Deprecated with the release of 4D printing,"",false,false
+CF4D7TBMX,wip-showoff,1546449464,UAVTLULLV,,"Show us what you're working on, or your finished project glamour shots!","",false,false
+CK1E2EFRB,homebus,1559017695,U93K5R9QV,,for testing homebus slack integration,"",false,false
+CK48N2NJJ,irc,1559058595,U93K5R9QV,,messages from IRC,"",false,false
+CKCN6NSTW,vending-machine,1559974832,U8X0BGB4P,,"Maintenance, stocking, new features and all things related to the vending machine.",Control vending machine LEDs at <http://vendo> or <http://192.168.15.22>,false,false
+CKUS3UZC3,3d-printer-jobs,1562363004,U93K5R9QV,,Automated posts of 3D printer job status,IP is 192.168.15.26 (Zoya) and tbd,false,false
+CM5CR326M,soundbooth,1565756834,ULPKB2PC3,,All things sound-booth-ish.,"",false,false
+CN0M0G3TP,food,1567615167,U93K5R9QV,,"food, food hacking, food hacking complaints, restaurants, etc","",false,false
+CN1MK8BN2,maker-faire-portland,1567541906,U8VV3DCDT,,To organize for (insert year here)'s Portland Mini Maker Faire at OMSI,"",false,false
+CNH3EV7NX,computer-museum,1569637875,U8VV3DCDT,,"^H Computer Museum chatter, and all other talk related to vintage computing","",false,false
+CNMTXQLEP,hydroponics,1570037160,U93K5R9QV,,"","",false,false
+CS1NYC8GJ,wiki,1578513699,U93K5R9QV,,discussions about the PDX Hackerspace wiki,"",false,false
+CTEHGDM6U,radio,1580593888,U8VV3DCDT,,Discussion of all things radio,"",false,false
+CU2HV0LBT,solarsystem,1582407723,URRDU2VRD,,"We're rebuilding the PDX to-scale solar system model!
+
+Original website (recreated by tishbite) at: <http://pdxsolarsystem.com|pdxsolarsystem.com>","",false,false
+CUM2KRU4U,lack-stack-status,1582872249,URDM8DSFK,,What part needs to be printed next for the lack stack?,"",false,false
+CURJMFH1D,covid-19,1583018497,U93K5R9QV,,for discussion of the covid-19 outbreak,Don't forget to check out the pinned messages. Shared Google Drive Folder <https://drive.google.com/drive/folders/1gJtpzyZ0RHm8DZl1MrE2vjy9rmmUU1cQ?usp=sharing> (please create subfolders to keep things organized),false,false
+C0102GRQEHG,test_archived_channel,1584723801,U93K5R9QV,,channel for archiving for testing slack mod mods,"",false,true
