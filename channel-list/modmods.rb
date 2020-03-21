@@ -13,6 +13,8 @@ slack = Slack.new ENV['SLACK_API_TOKEN']
 slack.verbose = options[:verbose]
 
 channels = slack.conversations["channels"].map do |c|
+  info = slack.conversation c["id"]
+
   { name: c["name"],
     created_at: c["created"],
     id: c["id"],
@@ -21,7 +23,8 @@ channels = slack.conversations["channels"].map do |c|
     creator: c["creator"],
     num_members: c["num_members"],
     is_private: c["is_private"],
-    is_archived: c["is_archived"]
+    is_archived: c["is_archived"],
+    is_read_only: info["channel"].key?("is_read_only")
   }
 end
 
@@ -36,7 +39,7 @@ elsif options[:json]
   puts channels.to_json
 else
   channels.each do |channel|
-    message = "%c %c %11s %32s %u %10s %6d %.20s %.20s" % [channel[:is_archived] ? 'A' : ' ', channel[:is_private] ? 'P' : ' ', channel[:id], channel[:name], channel[:created_at], channel[:creator], channel[:num_members], channel[:purpose], channel[:topic] ]
+    message = "%c %c %11s %32s %u %10s %6d %.20s %.20s" % [channel[:is_archived] ? 'A' : ' ', channel[:is_private] ? 'P' : ' ', channel[:id], channel[:name], channel[:created_at], channel[:creator], channel[:num_members], channel[:purpose], channel[:topic], channel[:is_read_only ] ]
     puts message
   end
 end

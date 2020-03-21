@@ -15,6 +15,7 @@ class Slack
     results = self.class.get url, query: query.merge({ token: @api_token })
 
     if @verbose
+      puts ">>> #{url}"
       pp results
     end
 
@@ -24,5 +25,9 @@ class Slack
   # https://slack.com/api/conversations.list
   def conversations
     _get '/conversations.list', { limit: 1000}
+  end
+
+  def conversation(id)
+    _get '/conversations.info', {  channel: id }
   end
 end
