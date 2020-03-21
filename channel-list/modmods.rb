@@ -19,7 +19,10 @@ channels = slack.conversations["channels"].map do |c|
 
   if !usernames[c["creator"]]
     user_info = slack.user c["creator"]
-    usernames[c["creator"]] = user_info["user"]["name"]
+
+    if user_info["ok"] && user_info["user"]
+      usernames[c["creator"]] = user_info["user"]["name"]
+    end
   end
 
   creator_name = usernames[c["creator"]] || ""
