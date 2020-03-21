@@ -30,4 +30,8 @@ class Slack
   def conversation(id)
     _get '/conversations.info', {  channel: id }
   end
+
+  def user(id)
+    _get '/users.info', { user: id }
+  end
 end
