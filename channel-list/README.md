@@ -45,3 +45,11 @@ to output the list of channels in text.
 Use the following options:
 - `--json` output as JSON
 - `--csv` output as CSV
+
+# Contributing
+
+Please fork the repository, make a branch and submit it as a pull request.
+
+# License
+
+Licensed under the [MIT License](https://romkey.mit-license.org).
