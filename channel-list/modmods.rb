@@ -29,7 +29,7 @@ channels = slack.conversations["channels"].map do |c|
 end
 
 if options[:csv]
-  puts %w{ID Name Created Creator Members Purpose Topic Private Archived}.join(', ')
+  puts %w{ID Name Created Creator Members Purpose Topic Private Archived ReadOnly}.join(', ')
   CSV($stdout) do |csv|
     channels.each do |channel|
       csv << [ channel[:id], channel[:name], channel[:created_at], channel[:creator], channel[:num_members], channel[:purpose], channel[:topic], channel[:is_private], channel[:is_archived] ]
