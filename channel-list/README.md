@@ -20,7 +20,7 @@ Click "Permissions" under "Add features and functionality".
 
 Go to "User Token Scopes" and click "Add an OAuth Scope"
 
-Add "channels:read" and "channels:history" - these scopes permit the application to see the list of all channels, get info about the channels, and read messages from them. They do not permit the app to make any modifications to the channels or post to them.
+Add "channels:read","channels:history" and "users:read" - these scopes permit the application to see the list of all channels, get info about the channels, and read messages from them. They do not permit the app to make any modifications to the channels or post to them.
 
 Go back to the top of the page and click the green "Install App to Workspace" button. This will take you to a conset page; click "Allow".
 
