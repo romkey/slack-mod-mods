@@ -29,6 +29,7 @@ channels = slack.conversations["channels"].map do |c|
 
   { name: c["name"],
     created_at: c["created"],
+    created_at_friendly: Time.at(c["created"]).to_datetime.strftime("%-m/%d/%y %H:%M:%S"),
     id: c["id"],
     purpose: c["purpose"]["value"],
     topic: c["topic"]["value"],
@@ -42,17 +43,17 @@ channels = slack.conversations["channels"].map do |c|
 end
 
 if options[:csv]
-  puts %w{ID Name Created Creator Members Purpose Topic Private Archived ReadOnly CreatorName}.join(', ')
+  puts %w{ID Name Created Creator Members Purpose Topic Private Archived ReadOnly CreatorName CreatedFriendlyTime}.join(', ')
   CSV($stdout) do |csv|
     channels.each do |channel|
-      csv << [ channel[:id], channel[:name], channel[:created_at], channel[:creator], channel[:num_members], channel[:purpose], channel[:topic], channel[:is_private], channel[:is_archived], channel[:is_read_only], channel[:creator_name] ]
+      csv << [ channel[:id], channel[:name], channel[:created_at], channel[:creator], channel[:num_members], channel[:purpose], channel[:topic], channel[:is_private], channel[:is_archived], channel[:is_read_only], channel[:creator_name], channel[:created_at_friendly] ]
     end
   end
 elsif options[:json]
   puts channels.to_json
 else
   channels.each do |channel|
-    message = "%c %c %s %11s %32s %u %10s %12s %6d %.20s %.20s" % [channel[:is_archived] ? 'A' : ' ', channel[:is_private] ? 'P' : ' ', channel[:is_read_only] ? 'RO' : 'RW', channel[:id], channel[:name], channel[:created_at], channel[:creator], channel[:creator_name], channel[:num_members], channel[:purpose], channel[:topic] ]
+    message = "%c %c %s %11s %32s %16s %10s %12s %6d %.20s %.20s" % [channel[:is_archived] ? 'A' : ' ', channel[:is_private] ? 'P' : ' ', channel[:is_read_only] ? 'RO' : 'RW', channel[:id], channel[:name], channel[:created_at_friendly], channel[:creator], channel[:creator_name], channel[:num_members], channel[:purpose], channel[:topic] ]
     puts message
   end
 end
