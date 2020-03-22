@@ -31,6 +31,10 @@ class Slack
     _get '/conversations.info', {  channel: id }
   end
 
+  def pins(id)
+    _get '/pins.list', { channel: id }
+  end
+
   def user(id)
     _get '/users.info', { user: id }
   end
